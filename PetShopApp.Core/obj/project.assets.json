@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dpank\\Documents\\GitHub\\PetShopApp2020\\PetShopApp2020\\ConsoleApp2020.csproj",
-      "projectName": "ConsoleApp2020",
-      "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\PetShopApp2020\\PetShopApp2020\\ConsoleApp2020.csproj",
+      "projectUniqueName": "C:\\Users\\dpank\\Documents\\GitHub\\PetShopApp2020\\PetShopApp.Core\\PetShopApp.Core.csproj",
+      "projectName": "PetShopApp.Core",
+      "projectPath": "C:\\Users\\dpank\\Documents\\GitHub\\PetShopApp2020\\PetShopApp.Core\\PetShopApp.Core.csproj",
       "packagesPath": "C:\\Users\\dpank\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dpank\\Documents\\GitHub\\PetShopApp2020\\PetShopApp2020\\obj\\",
+      "outputPath": "C:\\Users\\dpank\\Documents\\GitHub\\PetShopApp2020\\PetShopApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dpank\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp2020
+namespace PetShopApp.Core
 {
     class Program
     {
