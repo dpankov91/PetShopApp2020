@@ -6,6 +6,7 @@ namespace PetShopApp.Coree
 {
     interface IPetService
     {
+        public List<Pet> getPets();
     }
 }
     

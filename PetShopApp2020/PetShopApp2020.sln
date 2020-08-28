@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp2020", "PetShopApp2020.csproj", "{147AA5C3-5F1E-4461-9090-932DDD59267C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp2020", "ConsoleApp2020.csproj", "{147AA5C3-5F1E-4461-9090-932DDD59267C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D4AAB65B-FCCA-46E1-844F-36641E66A15F}"
 EndProject
@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp.Core.Entities", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp.Coree", "..\PetShopApp.Coree\PetShopApp.Coree.csproj", "{95E251CD-9A82-4DA6-809D-FEAC0E3FE917}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp.Infastructure.Data", "..\PetShopApp.Infastructure.Data\PetShopApp.Infastructure.Data.csproj", "{FDC608BB-B57F-437D-82AF-5AEDDF419232}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetShopApp.Infastructure.Static.Data", "..\PetShopApp.Infastructure.Data\PetShopApp.Infastructure.Static.Data.csproj", "{FDC608BB-B57F-437D-82AF-5AEDDF419232}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -5,7 +5,7 @@ using PetShopApp.Core.Entities;
 
 namespace PetShopApp.Coree.DomainServices
 {
-    interface IPetRepository
+    public interface IPetRepository
     {
 
         Pet Create(Pet pet);
