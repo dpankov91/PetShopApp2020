@@ -11,14 +11,11 @@ namespace PetShopApp.Core.Entities
 
         public string Name { get; set; }
 
-        public enum Pets 
-        {
-            Cat, Dog, Mouse, Snake        
-        }
+        public string Type { get; set; }
 
         public DateTime Birthday { get; set; }
 
-        public DateTime DateTime { get; set; }
+        public DateTime SoldDate { get; set; }
 
         public string Color { get; set; }
 
