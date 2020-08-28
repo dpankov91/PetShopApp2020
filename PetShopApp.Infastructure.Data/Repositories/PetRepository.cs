@@ -21,8 +21,13 @@ namespace PetShopApp.Infastructure.Static.Data.Repositories
 
         public Pet Delete(int id)
         {
-            _pets.Remove(Pet.id);
-
+            Pet petFound = this.ReadById(id);
+            if (petFound != null)
+            {
+                _pets.Remove(petFound);
+                return petFound;
+            }
+            return null;
         }
 
         public List<Pet> ReadAll()
@@ -50,13 +55,13 @@ namespace PetShopApp.Infastructure.Static.Data.Repositories
                 petFromDB.Name = petToUpdate.Name;
                 petFromDB.prevOwner = petToUpdate.prevOwner;
                 petFromDB.Price = petToUpdate.Price;
+                petFromDB.Color = petToUpdate.Color;
+                petFromDB.Birthday = petToUpdate.Birthday;
+                petFromDB.SoldDate = petToUpdate.SoldDate;
 
                 return petFromDB;
             }
             return null;
-           
-
-            
         }
     }
 }
