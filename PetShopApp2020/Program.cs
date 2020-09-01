@@ -1,6 +1,10 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 using PetShopApp.Coree;
+using PetShopApp.Coree.ApplicationServices.Services;
+using PetShopApp.Coree.ApplicationServices.Services.Implementation;
+using PetShopApp.Coree.DomainServices;
+using PetShopApp.Infastructure.Static.Data;
 using PetShopApp.Infastructure.Static.Data.Repositories;
 
 namespace ConsoleApp2020
@@ -17,7 +21,7 @@ namespace ConsoleApp2020
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
             var petService = serviceProvider.GetRequiredService<IPetService>();
-            var dataInitializer = new DataInitializer(petService);
+            var dataInitializer = new DataInit(petService);
 
             dataInitializer.InitData();
 

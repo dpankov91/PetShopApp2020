@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using PetShopApp.Core.Entities;
 
-namespace PetShopApp.Coree
+namespace PetShopApp.Coree.ApplicationServices.Services
 {
     public interface IPetService
     {

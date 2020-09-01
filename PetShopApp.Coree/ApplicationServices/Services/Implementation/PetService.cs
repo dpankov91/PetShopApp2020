@@ -5,7 +5,7 @@ using System.Text;
 using PetShopApp.Core.Entities;
 using PetShopApp.Coree.DomainServices;
 
-namespace PetShopApp.Coree
+namespace PetShopApp.Coree.ApplicationServices.Services.Implementation
 {
     public class PetService : IPetService
     {

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Text;
 using PetShopApp.Coree;
 using PetShopApp.Core.Entities;
+using PetShopApp.Coree.ApplicationServices.Services;
 
 namespace PetShopApp.Infastructure.Static.Data
 {
-    class DataInit
+    public class DataInit
     {
         readonly IPetService _petService;
 

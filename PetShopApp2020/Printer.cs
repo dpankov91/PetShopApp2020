@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using PetShopApp.Core.Entities;
 using PetShopApp.Coree;
+using PetShopApp.Coree.ApplicationServices.Services;
 
 namespace ConsoleApp2020
 {
