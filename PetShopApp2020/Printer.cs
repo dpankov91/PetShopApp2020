@@ -35,9 +35,9 @@ namespace ConsoleApp2020
 
             int selection = ShowMenu(menuItems);
 
-            while (selection != 8)
+            while (selection != 9)
             {
-                while (selection != 8)
+                while (selection != 9)
                 {   
                     switch (selection)
                     {
@@ -70,13 +70,11 @@ namespace ConsoleApp2020
                             ListCheapestPets();
                             Console.WriteLine();
                             break;
-                        default:
-                            break;
                     }
                     selection = ShowMenu(menuItems);
                 }
                 Console.WriteLine("Bye bye!");
-
+                Console.Write("");
                 Console.ReadLine();
             }
         }
@@ -85,6 +83,7 @@ namespace ConsoleApp2020
         {
             int idForDelete = PrintFindPetId();
             _petService.Delete(idForDelete);
+            Console.WriteLine("Removed!");
         }
 
         private void ListCheapestPets()
