@@ -1,0 +1,6 @@
+C:\Users\dpank\Documents\GitHub\PetShopApp2020\PetShopApp2020\bin\Debug\netcoreapp3.1\PetShopApp.Core.Entities.dll
+C:\Users\dpank\Documents\GitHub\PetShopApp2020\PetShopApp2020\bin\Debug\netcoreapp3.1\PetShopApp.Coree.dll
+C:\Users\dpank\Documents\GitHub\PetShopApp2020\PetShopApp2020\bin\Debug\netcoreapp3.1\PetShopApp.Infastructure.Static.Data.dll
+C:\Users\dpank\Documents\GitHub\PetShopApp2020\PetShopApp2020\obj\Debug\netcoreapp3.1\ConsoleApp2020.csprojAssemblyReference.cache
+C:\Users\dpank\Documents\GitHub\PetShopApp2020\PetShopApp2020\obj\Debug\netcoreapp3.1\ConsoleApp2020.AssemblyInfoInputs.cache
+C:\Users\dpank\Documents\GitHub\PetShopApp2020\PetShopApp2020\obj\Debug\netcoreapp3.1\ConsoleApp2020.AssemblyInfo.cs

@@ -37,12 +37,13 @@ namespace ConsoleApp2020
             while (selection != 8)
             {
                 while (selection != 8)
-                {
+                {   
                     switch (selection)
                     {
                         case 1:
                             List<Pet> pets = _petService.GetPets();
                             ListPets(pets);
+                            Console.WriteLine();
                             break;
                         case 2:
                             var pet = MakeNewPet();
@@ -50,8 +51,7 @@ namespace ConsoleApp2020
                             Console.WriteLine();
                             break;
                         case 3:
-                            int idForDelete = PrintFindPetId();
-                            _petService.Delete(idForDelete);
+                            DeletePet();
                             break;
                         case 4:
                             UpdatePet();
@@ -78,6 +78,12 @@ namespace ConsoleApp2020
 
                 Console.ReadLine();
             }
+        }
+
+        private void DeletePet()
+        {
+            int idForDelete = PrintFindPetId();
+            _petService.Delete(idForDelete);
         }
 
         private void ListCheapestPets()
