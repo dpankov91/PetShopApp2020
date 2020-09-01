@@ -25,7 +25,7 @@ namespace PetShopApp.Coree
                 SoldDate = SoldDate,
                 Color = Color,
                 Price = Price,
-                prevOwner = prevOwner
+                PrevOwner = prevOwner
             };
             _petRepository.Create(pet);
             return pet;
@@ -40,7 +40,7 @@ namespace PetShopApp.Coree
         {
             var pet = FindPetById(petToUpdate.Id);
             petToUpdate.Name = pet.Name;
-            petToUpdate.prevOwner = pet.prevOwner;
+            petToUpdate.PrevOwner = pet.PrevOwner;
             petToUpdate.Price = pet.Price;
             petToUpdate.SoldDate = pet.SoldDate;
             petToUpdate.Type = pet.Type;

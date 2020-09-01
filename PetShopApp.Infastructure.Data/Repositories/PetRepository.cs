@@ -65,7 +65,7 @@ namespace PetShopApp.Infastructure.Static.Data.Repositories
             if(petFromDB != null)
             {
                 petFromDB.Name = petToUpdate.Name;
-                petFromDB.prevOwner = petToUpdate.prevOwner;
+                petFromDB.PrevOwner = petToUpdate.PrevOwner;
                 petFromDB.Price = petToUpdate.Price;
                 petFromDB.Color = petToUpdate.Color;
                 petFromDB.Birthday = petToUpdate.Birthday;

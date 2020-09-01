@@ -94,4 +94,4 @@ namespace PetShopApp.Infastructure.Static.Data
 
     }
 }
-}
+

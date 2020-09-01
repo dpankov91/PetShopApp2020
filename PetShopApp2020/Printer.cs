@@ -142,7 +142,7 @@ namespace ConsoleApp2020
             petToUpdate.Color = newColor;
             petToUpdate.Birthday = newBirthday;
             petToUpdate.SoldDate = newSoldDate;
-            petToUpdate.prevOwner = newOwner;
+            petToUpdate.PrevOwner = newOwner;
             petToUpdate.Price = newPrice;
 
             _petService.Update(petToUpdate);
@@ -208,7 +208,7 @@ namespace ConsoleApp2020
             {
                 Console.WriteLine($"Id: {pet.Id} Name: {pet.Name} " +
                                 $"Type: {pet.Type} + Color: {pet.Color}" +
-                                $"Birthday: {pet.Birthday} + Previous Owner: { pet.prevOwner} " +
+                                $"Birthday: {pet.Birthday} + Previous Owner: { pet.PrevOwner} " +
                                 $"Price: {pet.Price} + Sold Date: { pet.SoldDate}");
             }
             Console.WriteLine("\n");
