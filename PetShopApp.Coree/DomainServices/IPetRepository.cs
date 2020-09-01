@@ -16,5 +16,7 @@ namespace PetShopApp.Coree.DomainServices
         Pet Update(Pet petToUpdate);
 
         Pet Delete(int id);
+        List<Pet> FilterPetByType(string type);
+        List<Pet> GetPriceList();
     }
 }

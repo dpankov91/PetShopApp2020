@@ -7,20 +7,25 @@ namespace PetShopApp.Coree
 {
     public interface IPetService
     {
-        Pet NewPet( string Name,
-                    string lastName,
-                    string lastName,
-                    string lastName,
-                    string lastName,
-                               string address);
+        Pet CreateNewPet( string Name,
+                    string Type,
+                    DateTime BirthdayDate,
+                    DateTime SoldDate,
+                    string Color,
+                    double Price,
+                    string prevOwner);
         List<Pet> GetPets();
 
         Pet FindPetById(int id);
-
-
+        
         Pet Update(Pet pet);
 
-        Pet Delete(Pet )
+        Pet Delete(int id);
+
+        Pet Create(Pet pet);
+
+        List<Pet> FilterPetByType(string type);
+        List<Pet> GetSortedList();
     }
 }
     

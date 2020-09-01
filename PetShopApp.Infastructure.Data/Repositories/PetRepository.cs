@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using PetShopApp.Core.Entities;
 using PetShopApp.Coree.DomainServices;
+using System.Linq;
 
 namespace PetShopApp.Infastructure.Static.Data.Repositories
 {
@@ -28,6 +29,17 @@ namespace PetShopApp.Infastructure.Static.Data.Repositories
                 return petFound;
             }
             return null;
+        }
+
+        public List<Pet> FilterPetByType(string type)
+        {
+            return _pets.Where(x => x.Type == type).ToList();
+
+        }
+
+        public List<Pet> GetPriceList()
+        {
+            return _pets.OrderBy(x => x.Price).ToList();
         }
 
         public List<Pet> ReadAll()
