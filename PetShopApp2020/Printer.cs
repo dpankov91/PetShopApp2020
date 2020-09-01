@@ -113,7 +113,7 @@ namespace ConsoleApp2020
 
         private void SearchPetByType()
         {
-            Console.Write("$ Insert type: ");
+            Console.Write($"Insert type: ");
             string type = Console.ReadLine();
             List<Pet> filteredList = _petService.FilterPetByType(type);
             foreach (var item in filteredList)
@@ -127,15 +127,15 @@ namespace ConsoleApp2020
             int petId = InsertPetId();
             var petToUpdate = _petService.FindPetById(petId);
             Console.WriteLine("Update " + petToUpdate.Name);
-            var newName = AskStringQuestion("$ Name: ");
-            var newType = AskStringQuestion("$ Type: ");
-            string newColor = AskStringQuestion("$ Color:");
-            Console.Write("$ Birth date:");
+            var newName = AskStringQuestion("Name: ");
+            var newType = AskStringQuestion("Type: ");
+            string newColor = AskStringQuestion("Color:");
+            Console.Write("Birth date:");
             DateTime newBirthday = AskDateQuestion();
-            Console.Write("$ Sold date:");
+            Console.Write("Sold date:");
             DateTime newSoldDate = AskDateQuestion();
-            var newOwner = AskStringQuestion("$ Owner: ");
-            Console.Write("$ Price: ");
+            var newOwner = AskStringQuestion("Owner: ");
+            Console.Write("Price: ");
             double newPrice = AskDoubleQuestion();
 
             petToUpdate.Name = newName;
@@ -151,11 +151,11 @@ namespace ConsoleApp2020
 
         private int InsertPetId()
         {
-            Console.Write("$ Insert Pet Id: ");
+            Console.Write("Insert Pet Id: ");
             int id;
             while (!int.TryParse(Console.ReadLine(), out id))
             {
-                Console.WriteLine("$ Please insert a number: ");
+                Console.WriteLine("Please insert a number: ");
             }
             return id;
         }
@@ -163,15 +163,15 @@ namespace ConsoleApp2020
         private Pet MakeNewPet()
         {
             Console.WriteLine("Create new Pet ");
-            var name = AskStringQuestion("$ Name: ");
-            var type = AskStringQuestion("$ Type: ");
-            var color = AskStringQuestion("$ Color: ");
-            Console.Write("$ Birthday: ");
+            var name = AskStringQuestion("Name: ");
+            var type = AskStringQuestion("Type: ");
+            var color = AskStringQuestion("Color: ");
+            Console.Write("Birthday: ");
             DateTime birthday = AskDateQuestion();
-            Console.Write("$ Sold Date: ");
+            Console.Write("Sold Date: ");
             DateTime soldDate = AskDateQuestion();
-            var owner = AskStringQuestion("$ Previous Owner: ");
-            Console.Write("$ Price: ");
+            var owner = AskStringQuestion("Previous Owner: ");
+            Console.Write("Price: ");
             Double price = AskDoubleQuestion();
             return _petService.CreateNewPet(name, type, birthday, soldDate, color, price, owner);
         }
@@ -181,7 +181,7 @@ namespace ConsoleApp2020
             double amount;
             while (!Double.TryParse(Console.ReadLine(), out amount))
             {
-                Console.WriteLine("$ Please insert a amount: ");
+                Console.WriteLine("Please insert a amount: ");
             }
             return amount;
         }
@@ -207,10 +207,10 @@ namespace ConsoleApp2020
             Console.WriteLine("\nList of Pets");
             foreach (var pet in pets)
             {
-                Console.WriteLine($"Id: {pet.Id} Name: {pet.Name} " +
-                                $"Type: {pet.Type} + Color: {pet.Color}" +
-                                $"Birthday: {pet.Birthday} + Previous Owner: { pet.PrevOwner} " +
-                                $"Price: {pet.Price} + Sold Date: { pet.SoldDate}");
+                Console.WriteLine($"Id: {pet.Id} | Name: {pet.Name} "  +
+                                $"| Type: {pet.Type} | Color: {pet.Color}"  +
+                                $"| Birthday: {pet.Birthday} | Previous Owner: { pet.PrevOwner} " +
+                                $"| Price: {pet.Price} | Sold Date: { pet.SoldDate}");
             }
             Console.WriteLine("\n");
         }
